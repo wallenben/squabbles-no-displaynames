@@ -3,7 +3,7 @@
 // @namespace     https://squabbles.io/
 // @version      0.1
 // @description  Removes all display names from squabbles.
-// @author       pbjpie / rayquaza
+// @author       rayquaza
 // @match        https://squabbles.io/*
 // @grant        none
 // ==/UserScript==
