@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Display Names
 // @namespace     https://squabbles.io/
-// @version      0.3
+// @version      0.4
 // @description  Removes all display names from squabbles.
 // @author       rayquaza
 // @match        https://squabbles.io/*
@@ -20,8 +20,7 @@
                            parent.getElementsByClassName('me-1 fw-bold text-decoration-none')[0];
             if (element1 && element2) {
                 let temp = element1.textContent;
-                element1.textContent = element2.textContent;
-                element2.textContent = temp;
+                element2.textContent = temp.slice(2,temp.length);
                 element1.parentNode.removeChild(element1);
             }
         }
