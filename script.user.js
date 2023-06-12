@@ -10,10 +10,6 @@
 
 (function() {
     'use strict';
-      let navElement = document.querySelector('nav.py-3');
-        if (navElement) {
-            navElement.parentNode.removeChild(navElement);
-        }
     function swapTextContentAndRemove() {
         let parentElements = document.getElementsByClassName('flex-grow-1 align-self-center');
 
