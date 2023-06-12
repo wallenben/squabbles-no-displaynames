@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Display Names
 // @namespace     https://squabbles.io/
-// @version      0.1
+// @version      0.2
 // @description  Removes all display names from squabbles.
 // @author       rayquaza
 // @match        https://squabbles.io/*
