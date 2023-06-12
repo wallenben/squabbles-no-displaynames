@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Display Names
 // @namespace     https://squabbles.io/
-// @version      0.4
+// @version      0.5
 // @description  Removes all display names from squabbles.
 // @author       rayquaza
 // @match        https://squabbles.io/*
@@ -10,7 +10,10 @@
 
 (function() {
     'use strict';
-
+      let navElement = document.querySelector('nav.py-3');
+        if (navElement) {
+            navElement.parentNode.removeChild(navElement);
+        }
     function swapTextContentAndRemove() {
         let parentElements = document.getElementsByClassName('flex-grow-1 align-self-center');
 
@@ -23,6 +26,7 @@
                 element2.textContent = temp.slice(2,temp.length);
                 element1.parentNode.removeChild(element1);
             }
+            
         }
     }
     setInterval(swapTextContentAndRemove, 1000);
